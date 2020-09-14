@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    height: 2em;
+    background: linear-gradient(to right,blue,gray, white);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 -2px 5px black;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    line-height: 2em;
+    font-size: 1em;
+    height: 100%;
+    padding: 0 1em;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: orange;
+}
+
+#home {
+    background-image: url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg);
+    color: white;
+    box-sizing: border-box;
+    padding-top: 4em;
+    display: table;
+    width: 100%;
+    background-size: cover;
+}
+
+#scroll {
+    display: table-row;
+    vertical-align: bottom;
+    height: 2em;
+    text-align: center;
+}
+
+#scroll a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#scroll a:hover {
+    color:orange;
+}
+
+.image, .text {
+     box-sizing: border-box;
+    height: 50%;
+}
+
+.image {
+    background-image: url("https://i.pinimg.com/originals/e9/03/cf/e903cfedbf621f74274de2d24dc6fc42.jpg");
+    background-size: cover;
+}
+
+#download{
+    background-color: black;
+}
+
+#center{
+
+    padding-top: 40px;
+    line-height: 60px;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    text-shadow: 2px,2px,2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;\
+
+
+}
+.mySlides {
+display: none;
+display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+height: 550px;
+border-radius: 20px;
+padding-top: 25%;
+
+
+}
+
+
+
+.text{
+    line-height: 60px;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    padding: 2em;
+    background-color: orange;
+    background: linear-gradient(orange, red, black);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+}
+
+.content .hidden-scroll {
+    position: absolute;
+    top: -2em;
+}
+
+#title-box {
+    font-family: 'Bowlby One SC';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2em;
+    line-height: 1em;
+    height: 100%;
+    transition: font-size .3s;
+}
+
+.notes span {
+    display: inline-block;
+    transform: rotate(15deg);
+    font-style: italic;
+}
+
+.notes:nth-of-type(1) {
+}
+
+.notes:nth-of-type(2) {
+    text-align: right;
+}
+
+#title-box.big {
+    font-size: 3em;
+}
+
+
+
+@media (min-width: 768px) {
+    .image, .text {
+        width: 50%;
+        height: 100%;
+    }
+    #title-box {
+        font-size: 4em;
+    }
+    #title-box.big {
+        font-size: 5em;
+    }
+}
