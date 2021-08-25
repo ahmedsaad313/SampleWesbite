@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    font-size: 1.2em;
-    line-height: 1.6em;
+    font-size: 1.7em;
+    line-height: 2em;
     font-family: 'Titillium Web', sans-serif;
 }
 
 #navbar {
     position: fixed;
     top: 0;
-    height: 2em;
-    background: linear-gradient(to right,blue,gray, white);
+    height: 4em;
+    background: black;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -21,9 +21,9 @@ body {
     color: white;
     display: inline;
     line-height: 2em;
-    font-size: 1em;
+    font-size: 2em;
     height: 100%;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 #navbar a:hover {
@@ -60,13 +60,16 @@ body {
 
 .image, .text {
      box-sizing: border-box;
-    height: 50%;
 }
 
 .image {
     background-image: url("https://i.pinimg.com/originals/e9/03/cf/e903cfedbf621f74274de2d24dc6fc42.jpg");
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
+
+
 
 #download{
     background-color: black;
@@ -82,32 +85,17 @@ body {
     text-shadow: 2px,2px,2px black;
     display: flex;
     align-items: center;
-    justify-content: center;\
+    justify-content: center;
 
 
 }
-.mySlides {
-display: none;
-display: flex;
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
-height: 550px;
-border-radius: 20px;
-padding-top: 25%;
-
-
-}
-
-
 
 .text{
-    line-height: 60px;
-    font-size: 35px;
+    line-height:2em;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
     padding: 2em;
-    background-color: orange;
-    background: linear-gradient(orange, red, black);
+    background: linear-gradient(to top,blue,gray, white);
     color: white;
     display: flex;
     align-items: center;
@@ -140,12 +128,7 @@ padding-top: 25%;
     font-style: italic;
 }
 
-.notes:nth-of-type(1) {
-}
 
-.notes:nth-of-type(2) {
-    text-align: right;
-}
 
 #title-box.big {
     font-size: 3em;
