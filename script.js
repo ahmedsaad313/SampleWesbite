@@ -52,7 +52,7 @@ setInterval(function () {
 setTimeout(auto, 4000);
 let i = 0;
 
-function auto(){
+function  auto(){
 if(i === 0){
     document.querySelector("#home").style.backgroundImage = "url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg)" ;
 } 
@@ -70,15 +70,17 @@ if (i === 3){
 setTimeout(auto, 3000);
 }
 
-let image = document.getElementById("mySlides");
-let index = 0;
-let slides = ["https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681", 
-"https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg", 
-"https://dreamsinheels.com/wp-content/uploads/2015/09/views-queens-borough-new-york-nyc-queensboro-bridge-Long-Island-City.jpg" ];
+var slideIndex = 0;
+showSlides();
 
-nextInSlideShow();
-function nextInSlideShow(){
-    index++;
-    image.src = slides[index % slides.length];
-    setTimeout(nextInSlideShow, 3000);
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
