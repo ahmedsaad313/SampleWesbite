@@ -75,7 +75,7 @@ h1{
    font-style:initial;
    color: white;
    background-color: black;
-   padding: 30px;
+   padding: 1em;
 }
 
 
@@ -105,7 +105,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:2em;
+    font-size:1.5em;
     background-color:navy;
 }
 
@@ -113,7 +113,7 @@ h1{
     font-size:.5em;
     background-color: rgb(158, 34, 34);
     color:white;
-    margin-left: 20px;
+    margin-left: .8em;
 
 
 }
@@ -155,8 +155,8 @@ input{
 }
 
 .text{
-    line-height:60px;
-    font-size: 35px;
+    line-height:2em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
     padding: 2em;
     background: linear-gradient(to top,blue,gray, white);
