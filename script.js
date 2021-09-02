@@ -54,14 +54,14 @@ let i = 0;
 
 function auto(){
 if(i === 0){
-    document.querySelector("#home").style.backgroundImage = "url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg)" ;
+    document.querySelector("#home").style.backgroundImage = "url(https://www.collegeatlas.org/wp-content/uploads/2014/06/Top-Party-Schools-main-image.jpg)" ;
 } 
 else if(i === 1){
-    document.querySelector("#home").style.backgroundImage = "url(http://www.goodwp.com/images/201309/goodwp.com_29902.jpg)" ;
+    document.querySelector("#home").style.backgroundImage = "url(https://i.natgeofe.com/n/c9107b46-78b1-4394-988d-53927646c72b/1095.jpg)"
 
 }
 else if (i === 2){
-document.querySelector("#home").style.backgroundImage = "url(https://www.collegeatlas.org/wp-content/uploads/2014/06/Top-Party-Schools-main-image.jpg)" ;
+document.querySelector("#home").style.backgroundImage = "url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg)" ;
 }
 i++;
 if (i === 3){
