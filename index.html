@@ -9,6 +9,24 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400, 400i" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
   <link rel="shortcut icon" type="image/png" href="https://cdn.pixabay.com/photo/2016/05/08/15/15/hello-1379252__340.jpg"/>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+    <script>
+    // Initialize Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyAbp9rbmo7e_S7qzMHq4g8WokEpx2w6dKk",
+      authDomain: "sampleproject-c0298.firebaseapp.com",
+      projectId: "sampleproject-c0298",
+      storageBucket: "sampleproject-c0298.appspot.com",
+      messagingSenderId: "609749825987",
+      appId: "1:609749825987:web:674058108aaa557808e576",
+      measurementId: "G-X6RCS5ZJ6M"
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 <body>
   <div id="navbar">
@@ -34,8 +52,8 @@
         
         
     </div>
-    <div class="image">
-      
+    <div class="image" id = "react">
+      <div id = "react-add"></div>
     </div>
   </div>
   <div class="content" id="download">
@@ -52,6 +70,21 @@
             <!-- <img class="mySlides" src="https://boygeniusreport.files.wordpress.com/2017/01/cat.jpg?quality=98&strip=all&w=782" style="width:100%; height:auto">
             <img class="mySlides" src="https://dreamsinheels.com/wp-content/uploads/2015/09/views-queens-borough-new-york-nyc-queensboro-bridge-Long-Island-City.jpg"  style="width:100%; height:auto" > -->
     </div>
-  <script src="script.js"></script>
+  </div>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type = "text/babel" src = "Component.js"></script>
+
+  <script type = "text/babel">
+  
+  ReactDOM.render(<Component/>, document.querySelector("#react-add"))
+
+  </script>
+
+
+<script src="script.js"></script>
+<script src="Component.js"></script>
 </body>
 </html>

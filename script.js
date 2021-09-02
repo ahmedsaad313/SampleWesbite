@@ -82,3 +82,4 @@ function nextInSlideShow(){
     image.src = slides[index % slides.length];
     setTimeout(nextInSlideShow, 3000);
 }
+
